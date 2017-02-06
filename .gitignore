@@ -1,0 +1,10 @@
+obj/
+bin/
+*.log
+*.suo
+*.user
+*/packages/
+!**/packages/build/
+*.nupkg
+\[Content_Types\].xml
+packages/
