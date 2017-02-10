@@ -13,6 +13,7 @@ namespace CheckOutKata.UnitTests
         [TestCase("AA", 100)]
         [TestCase("AAA",130)]
         [TestCase("AAAA", 180)]
+        [TestCase("AAABB", 175)]
         [TestCase("AAAAAA", 260)]
         public void Should_return_correct_price(string items, int totalPrice)
         {
