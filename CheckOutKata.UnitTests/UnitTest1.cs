@@ -12,6 +12,8 @@ namespace CheckOutKata.UnitTests
         [TestCase("CDBA",115)]
         [TestCase("AA", 100)]
         [TestCase("AAA",130)]
+        [TestCase("AAAA", 180)]
+        [TestCase("AAAAAA", 260)]
         public void Should_return_correct_price(string items, int totalPrice)
         {
             Assert.AreEqual(totalPrice, new CheckOut().GetTotal(items));

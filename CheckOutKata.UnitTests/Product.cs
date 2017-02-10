@@ -3,6 +3,10 @@
     public abstract class Product
     {
         public int Price { get; protected set; }
+        //public int PromotionQuantity { get; set; }
+        //public int Discount { get; set; }
+
+        public Discount Discount { get; protected set; }
     }
 
 
@@ -11,6 +15,13 @@
         public ProductA()
         {
             Price = 50;
+            //PromotionQuantity = 3;
+            //Discount = 20;
+        }
+
+        public override string ToString()
+        {
+            return "A";
         }
     }
 
@@ -19,6 +30,12 @@
         public ProductB()
         {
             Price = 30;
+            //PromotionQuantity = 2;
+            //Discount = 15;
+        }
+        public override string ToString()
+        {
+            return "B";
         }
     }
 
@@ -28,6 +45,11 @@
         {
             Price = 20;
         }
+
+        public override string ToString()
+        {
+            return "C";
+        }
     }
 
     public class ProductD : Product
@@ -36,6 +58,10 @@
         {
             Price = 15;
         }
-    }
 
+        public override string ToString()
+        {
+            return "D";
+        }
+    }
 }

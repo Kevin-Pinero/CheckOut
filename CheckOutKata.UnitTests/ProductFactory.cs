@@ -4,10 +4,6 @@ namespace CheckOutKata.UnitTests
 {
     public class ProductFactory
     {
-        public ProductFactory()
-        {
-        }
-
         public Product Create(char item)
         {
             Product product;
