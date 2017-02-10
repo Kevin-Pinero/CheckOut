@@ -6,7 +6,7 @@
         //public int PromotionQuantity { get; set; }
         //public int Discount { get; set; }
 
-        public Discount Discount { get; protected set; }
+        //public Discount Discount { get; protected set; }
     }
 
 

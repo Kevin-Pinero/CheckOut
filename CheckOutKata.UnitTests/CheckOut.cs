@@ -34,10 +34,11 @@ namespace CheckOutKata.UnitTests
 
                 total += product.Price;
 
-                if (discounts.ContainsKey(product.ToString()) && discounts[product.ToString()].Item1 % productCount[product.ToString()] ==0)
+                if (discounts.ContainsKey(product.ToString()) && productCount[product.ToString()] > 1 &&
+                    productCount[product.ToString()] % discounts[product.ToString()].Item1 == 0)
                 {
 
-                    total -= discounts[product.ToString()].Item2;
+                    total -= (discounts[product.ToString()].Item2);
                 }
             }
 
