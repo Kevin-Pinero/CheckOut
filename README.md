@@ -1,6 +1,6 @@
 # CheckOut
 
-Just a kata picked to practice TDD.
+Just a kata picked to practice TDD in pai programming 9Worked with (Aleksey Groshev - https://github.com/alex-groshev)
 
 
 We’re going to see how far we can get in implementing a supermarket checkout that calculates the total price of a number of items. In a normal supermarket, things are identified using Stock Keeping Units, or SKUs. In our store, we’ll use individual letters of the alphabet (A, B, C, and so on). Our goods are priced individually. In addition, some items are multipriced: buy n of them, and they’ll cost you y pounds. For example, item ‘A’ might cost 50 pounds individually, but this week we have a special offer: buy three ‘A’s and they’ll cost you 130. The price and offer table:
